@@ -1,13 +1,5 @@
-movie-view
-==========
+#MovieView
 
 Display upcoming and latest movies
 
-Needs Sinatra Gem
-  gem install sinatra
-
-Run Server with
-  ruby server.rb
-
-View in Browser at
-  localhost:4567
+http://movieview-andburn.herokuapp.com/
