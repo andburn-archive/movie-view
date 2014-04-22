@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Info</title>
+
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="https://www.gstatic.com/freebase/suggest/4_2/suggest.min.css" />
+
+  <link rel="stylesheet" href="css/modb.css" />
+  <link rel="stylesheet" href="css/modb.slides.css" />
+
+</head>
+<body>
+
+	<!-- navigation -->
+	<nav class="top-bar" data-topbar>
+		<!-- Title -->
+	  <ul class="title-area">
+	    <li class="name"><h1><a id="home-button" href="#">Movie Info</a></h1></li>
+	    <!-- Mobile Menu Toggle -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+
+	  <!-- Top Bar Section -->
+	  <section class="top-bar-section">
+
+	    <!-- Top Bar Right Nav Elements -->
+	    <ul class="right">
+	    	<li class="has-form">
+	        <div class="row collapse">
+	          <div class="large-8 small-9 columns">
+	            <input type="text" id="search-box" placeholder="Movie Title">
+	          </div>
+	          <div class="large-4 small-3 columns">
+	            <a href="#" id="search-button" class="button expand">Search</a>
+	          </div>
+	        </div>
+	      </li>
+	      <li class="divider"></li>
+	      <li><a id="help-button" href="#">Help</a></li>
+	    </ul>
+	  </section>
+	</nav><!-- end navigation -->
+
+	<div id="modb-content">
+
+		<div id="home-container">
+			<!-- SlideJS Carousel -->
+			<div id="modb-slidejs" class="row hide-for-small-only">
+					<div class="large-12 columns">
+						<div id="slides"></div>
+						<div id="slide-caption"></div>
+					</div>
+			</div>
+			<!-- end SlideJS Carousel -->
+
+			<div id="modb-upcoming"></div>
+
+			<div id="modb-popular">
+				<div id="modb-popular-loading">
+					<img src="images/bars_64.gif" alt="Loading" />
+				</div>
+			</div>
+			
+		</div><!-- end home-container -->
+
+	</div><!-- end modb-content -->
+
+	<div id="help-panel">
+		<h1>Help</h1>
+		<p>Search using the search box in the top bar.<br />
+		Click poster images for more on that movie.</p>
+		<img id="arrowup" src="images/arrowup.png" />
+		<img id="arrowdown" src="images/downarrow.png" />
+	</div>
+
+<!-- javascript -->
+<script src="js/modernizr.js"></script>
+<script src="js/jq/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script src="js/jq/jquery.fancybox.pack.js"></script>
+<script src="js/jq/jquery.slides.min.js"></script>
+<script src="js/mustache.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="https://www.gstatic.com/freebase/suggest/4_2/suggest.min.js"></script>
+<script src="js/moment.min.js"></script>
+
+
+<script src="js/modb.js" ></script>
+<script src="js/modb.moviedb.js" ></script>
+<script src="js/modb.slides.js" ></script>
+<script src="js/modb.posters.js" ></script>
+<script src="js/modb.view.js" ></script>
+<script src="js/modb.search.js" ></script>
+<script src="js/modb.main.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* global */
+
+body {
+  background-image: url('../images/grey_wash_wall.png');
+}
+
+/* fix foundation 5 text input in top bar */
+
+.top-bar input[type="text"], .top-bar .button {
+  font-size: 0.77778rem;
+  position: relative;
+  top: 7px;
+}
+
+.top-bar input[type="text"] {
+  height: auto;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  font-size: 0.75rem;
+}
+
+/* slideshow */
+
+#modb-slide-loading {
+  position: absolute;
+  top: 150px;
+  left: 420px;
+  width: 160px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+  background-color: white;
+  padding: 10px 8px 10px 8px;
+  border-radius: 4px;
+}
+
+#modb-slide-loading img {
+  margin-top: 4px;
+}
+
+#modb-orbit-overlay {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  z-index: 20;
+}
+
+#modb-orbit-overlay h2 {
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* thumbnails */
+
+h3.modb-row-title {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.modb-thumb {
+  width: 220px;
+  height: 328px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: black;
+  background-image: url('../images/squares_64.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*  limit this to image only */
+.pop-tip {
+  display: none;
+  position: absolute;
+  top: 328px;
+  left: 0; 
+  background-color: #333;
+  /*background-color: #008CBA;*/
+  width: 100%;
+  height: 20%;
+  padding: 6px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: white;
+  z-index: 20;
+}
+
+#modb-popular-loading {
+  width: 33%;
+  min-width: 30px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  display: none;
+}
+
+#modb-popular-loading img {
+  margin: 0 8px 0 8px;
+}
+
+#modb-upcoming {
+  margin-top: 25px;
+}
+
+/* movie view */
+
+#modb-movie-info {
+  margin-top: 30px;
+}
+
+
+.modb-view-poster {
+  text-align: center;
+}
+
+.modb-view-info {
+  color: black;
+}
+
+.modb-gallery {
+  border: 1px white solid;
+  background-color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.modb-gallery img {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* search */
+
+.fbs-pane {
+  z-index: 50;
+}
+
+/* help */
+
+#help-panel {
+  position: absolute;
+  height: 200px;
+  width: 50%;
+  right: 0;
+  top: 45px;
+  background-color: rgba(51,51,51,0.8);
+  color: white;
+  z-index: 50;
+  display: none;
+  padding: 10px;
+}
+
+#help-panel h1 {
+  color: white;
+}
+
+#slides {
+  background-image: url('../images/squares_64.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+#arrowup {
+  position: relative;
+  top: -145px;
+  left: 310px;
+}
+
+#arrowdown {
+  position: relative;
+  top: -35px;
+  left: 85px;
+}

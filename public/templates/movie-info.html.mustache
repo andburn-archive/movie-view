@@ -1,0 +1,50 @@
+<div id="modb-movie-info" class="row">
+	<div class="small-12 large-12 columns">
+
+		<div class="row modb-view-header">
+			<div class="small-12 large-12 columns">
+				<div class="panel">
+					<h1>{{title}} ({{year}})</h1>
+					<h4>{{tagline}}</h4>		
+				</div>
+			</div>
+		</div>
+
+		<div class="row modb-view-content">
+
+			<div class="small-12 large-5 columns modb-view-poster">
+				<div class="row"><div class="small-12 columns">
+					<img src="{{poster_url}}" alt="{{title}}" />
+				</div></div>
+				<div class="row"><div class="small-12 columns">
+					<a href="http://www.imdb.com/title/{{imdb_id}}" target="_blank" class="button">IMDB</a>
+					<a href="http://www.themoviedb.org/movie/{{id}}" target="_blank" class="button">MovieDB</a>
+				</div></div>
+			</div>
+			<div class="small-12 large-7 columns modb-view-info">
+				<div class="row">
+					<div class="small-12 large-12 columns">
+						<p>{{overview}}</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 large-12 columns">
+						<p>&bull;{{#genres}}
+							{{name}}&nbsp;&bull;
+						{{/genres}}</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-6 large-6 columns">
+						<p>Release Date: {{release}}</p>
+					</div>
+					<div class="small-6 large-6 columns">
+						<p>Runtime: {{runtime}} mins</p>
+					</div>
+				</div>
+
+			</div>	
+		</div>
+
+	</div>
+</div>
